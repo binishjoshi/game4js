@@ -104,7 +104,7 @@ document.querySelector('.btn-hold').addEventListener('click', function()
 
     // Check if the player won the game
 
-    if(scores[activePlayer] >= 20)
+    if(scores[activePlayer] >= 100) //Maybe 20 was a typo ;)
     {
         document.getElementById('name-' + activePlayer).textContent = 'WINNER!';
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
